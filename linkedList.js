@@ -46,6 +46,36 @@ class LinkedList {
 
         return temp
     }
+
+    unshift(value) {
+        const newNode = new Node(value)
+
+        if (!this.head) {
+            this.head = newNode;
+            this.tail = newNode;
+        } else {
+            newNode.next = this.head
+            this.head = newNode
+        }
+        this.length++
+
+        return this
+    }
+
+    shift() {
+        if (!this.head) return undefined
+
+        let temp = this.head
+        this.head = this.head.next
+        temp.next = null
+        this.length--
+
+        if (this.length === 0) {
+            this.tail = null
+        }
+
+        return temp
+    }
 }
 
 let myLinkedList = new LinkedList(1)
