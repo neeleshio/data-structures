@@ -149,6 +149,8 @@ class LinkedList {
 
 let myLinkedList = new LinkedList(1)
 
+module.exports = LinkedList
+
 
 
 

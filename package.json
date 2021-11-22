@@ -1,0 +1,22 @@
+{
+  "name": "data-structures",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neeleshio/data-structures.git"
+  },
+  "author": "Neelesh Shetty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neeleshio/data-structures/issues"
+  },
+  "homepage": "https://github.com/neeleshio/data-structures#readme",
+  "dependencies": {
+    "jest": "^27.3.1"
+  }
+}
