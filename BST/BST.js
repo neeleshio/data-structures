@@ -52,7 +52,19 @@ class BST {
         }
         return false
     }
+
+    minValueNode(currentNode) {
+        while (currentNode.left) {
+            currentNode = currentNode.left
+        }
+        return currentNode
+    }
 }
 
 const myBST = new BST()
+
+myBST.minValueNode(myBST.root)
+myBST.minValueNode(myBST.root.left)
+myBST.minValueNode(myBST.root.right)
+
 console.log(myBST)
